@@ -152,6 +152,7 @@
 
     .subTitle {
       @include p;
+      opacity: 0.8;
     }
   }
 
@@ -164,5 +165,61 @@
 
   .btop {
     align-self: flex-end;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                    THREE                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  margin: 215px 0 150px;
+  padding: 0 64px;
+
+  .title {
+    @include h1;
+
+    span {
+      background: linear-gradient(to right, #7f00ff, #fdeff9);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+
+      .title {
+        font-size: 24px;
+        margin: 24px 0 12px;
+      }
+
+      .subTitle {
+        font-size: 18px;
+        opacity: 0.8;
+      }
+    }
   }
 }
