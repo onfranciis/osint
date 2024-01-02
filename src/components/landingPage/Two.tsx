@@ -4,6 +4,8 @@ const Two = () => {
   return (
     <section className="Two">
       <div className="topItem"></div>
+      <div className="border btop"></div>
+
       <div className="topItem sb">
         <Image
           alt="cross"
@@ -21,6 +23,9 @@ const Two = () => {
           className="right"
         />
       </div>
+
+      <div className="border btop"></div>
+
       <div className="topItem"></div>
 
       <div className="card">
@@ -29,11 +34,15 @@ const Two = () => {
         <p className="subTitle">Get up-to-the-minute information instantly.</p>
       </div>
 
+      <div className="border"></div>
+
       <div className="card sb">
         <Image alt="anonymous" src="/anonymous.svg" width={40} height={40} />
         <p className="title">Stealthy Searches</p>
         <p className="subTitle">Stay discreet while gathering data.</p>
       </div>
+
+      <div className="border"></div>
 
       <div className="card">
         <Image alt="world" src="/world.svg" width={40} height={40} />
@@ -50,11 +59,15 @@ const Two = () => {
           </p>
         </div>
 
+        <div></div>
+
         <div className="card">
           <Image alt="accurate" src="/accurate.svg" width={40} height={40} />
           <p className="title">100% Accuracy</p>
           <p className="subTitle">Trust in data that&apos;s always spot-on.</p>
         </div>
+
+        <div></div>
 
         <div className="card">
           <Image alt="storage" src="/storage.svg" width={40} height={40} />
