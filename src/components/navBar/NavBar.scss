@@ -15,10 +15,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 16px;
   padding: 44px 64px;
   position: absolute;
   top: 0;
+  z-index: 3;
 
   .links {
     display: flex;
@@ -27,11 +27,101 @@
     gap: 20px;
   }
 
-  a {
+  .main,
+  .getStarted {
+    font-size: 16px;
     color: white;
     display: flex;
     gap: 4px;
     justify-content: center;
     align-items: center;
   }
+
+  .decoration {
+    height: 2px;
+    width: 0%;
+    display: block;
+    background-color: $primary;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .burger {
+    background-color: transparent;
+    border: none;
+    display: none;
+  }
+
+  .getStarted {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+
+  .getStarted:hover,
+  .getStarted:focus {
+    background-color: $primary;
+  }
+
+  .navLink:hover,
+  .navLink:has(> a:focus) {
+    .decoration {
+      width: 100%;
+    }
+  }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   SIDEBAR                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.SideBar {
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 100px 50px 0;
+  border-left: 5px solid #8000ff59;
+  z-index: 5;
+  display: none;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.toggled {
+    transform: translateX(0);
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+.exit {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(8px);
+  display: none;
+  z-index: 0;
+
+  &.toggled {
+    display: none;
+  }
+}
+
+@import "./RWD.scss";
