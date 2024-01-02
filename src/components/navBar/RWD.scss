@@ -1,0 +1,29 @@
+@import "../../styles/Theme.scss";
+
+@media screen and (max-width: 1080px) {
+  .NavBar {
+    .links,
+    .getStarted {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+    }
+  }
+
+  .SideBar {
+    display: block;
+
+    .links,
+    .getStarted {
+      display: flex;
+    }
+  }
+
+  .exit {
+    &.toggled {
+      display: block;
+    }
+  }
+}
