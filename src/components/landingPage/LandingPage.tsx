@@ -1,5 +1,6 @@
 import "./LandingPage.scss";
 import One from "./One";
+import Three from "./Three";
 import Two from "./Two";
 
 const LandingPage = () => {
@@ -7,6 +8,7 @@ const LandingPage = () => {
     <div className="LandingPage">
       <One />
       <Two />
+      <Three />
     </div>
   );
 };
