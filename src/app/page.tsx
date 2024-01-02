@@ -1,3 +1,3 @@
-export default function Home() {
-  return <main></main>;
-}
+import LandingPage from "@/components/landingPage/LandingPage";
+
+export default LandingPage;
