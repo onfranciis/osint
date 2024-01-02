@@ -1,0 +1,9 @@
+@import "../../styles/Theme.scss";
+
+@media screen and (max-width: 830px) {
+  .Three {
+    .bottom {
+      flex-wrap: wrap;
+    }
+  }
+}
