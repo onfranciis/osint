@@ -27,7 +27,7 @@
 .One {
   @include OneBG1;
 
-  padding: 169px 0 357px 64px;
+  padding: 169px 0 757px 64px;
 
   .main {
     display: flex;
@@ -74,5 +74,89 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     TWO                                    */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.Two {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: linear-gradient(transparent, black, black);
+  padding: 64px;
+  margin-top: -550px;
+
+  .top {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .topItem {
+    height: 170.18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+
+    .left {
+      height: 9.96px;
+      width: 12px;
+      position: absolute;
+      bottom: -5.8px;
+      left: -6px;
+    }
+
+    .right {
+      height: 9.96px;
+      width: 12px;
+      position: absolute;
+      bottom: -5.8px;
+      right: -6px;
+    }
+  }
+
+  .bottom {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 99px;
+  }
+
+  .item {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+  }
+
+  .card {
+    padding: 35.84px 68px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 24px 0 12px;
+    }
+
+    .subTitle {
+      @include p;
+    }
+  }
+
+  .sb {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
   }
 }
