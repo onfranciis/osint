@@ -17,6 +17,8 @@
   align-items: center;
   font-size: 16px;
   padding: 44px 64px;
+  position: absolute;
+  top: 0;
 
   .links {
     display: flex;
@@ -26,7 +28,6 @@
   }
 
   a {
-    text-decoration: none;
     color: white;
     display: flex;
     gap: 4px;

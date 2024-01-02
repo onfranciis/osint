@@ -1,0 +1,24 @@
+@mixin h1 {
+  font-weight: 600;
+  line-height: 71px;
+  font-size: 56px;
+}
+
+@mixin p {
+  line-height: 25px;
+  font-size: 18px;
+}
+
+@mixin OneBG1 {
+  background-image: url("/map.svg"), url("/bg1.svg");
+  background-position: 0 30%, 0px 0px;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+}
+
+@mixin OneBG2 {
+  background-image: url("/bg.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
