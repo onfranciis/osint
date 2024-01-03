@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+    <img src="./public/logo.svg" />
+</p>
 
-## Getting Started
+# OSINT
 
-First, run the development server:
+<hr>
 
-```bash
+Landing page demo of OSINT Industries. Built using
+
+- NextJs
+- SCSS (A CSS Preprocessor)
+- TypeScript
+
+### Resources
+
+- Netlify (Hosting)
+- VS Code Insiders (IDE)
+
+<hr>
+
+### Install Locally
+
+To install this project locally
+
+- Navigate to your working directory in your terminal and run `git clone https://github.com/onfranciis/osint`
+- Navigate to **osint** and run
+
+```
 npm run dev
-# or
+or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000) on your browser to see the project. You can also see this project live at [https://osint.onfranciis.dev](https://osint.onfranciis.dev).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<b>:exclamation:PORT 3000 might not be available for you, so check your terminal output to confirm the exposed port.</b>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<hr>
 
-## Learn More
+If you like this repository, kindly give it a star 🌟
 
-To learn more about Next.js, take a look at the following resources:
+For enquiries, support or more, contact [hello@onfranciis.dev](mailto:hello@onfranciis.dev)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![VS Code Insiders](https://img.shields.io/badge/VS%20Code%20Insiders-35b393.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
