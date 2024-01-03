@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
   },
-  metadataBase: new URL("https://sustainobles.com.ng/"),
+  metadataBase: new URL("https://osint.onfranciis.dev"),
   openGraph: {
     images: [
       {
