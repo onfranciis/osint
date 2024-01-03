@@ -28,8 +28,10 @@
   @include OneBG1;
 
   padding: 169px 0 757px 64px;
+  width: 100%;
 
   .main {
+    max-width: 730px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -38,7 +40,6 @@
 
   .title {
     @include h1;
-    max-width: 748px;
 
     span {
       background: linear-gradient(to right, #7f00ff, #fdeff9);

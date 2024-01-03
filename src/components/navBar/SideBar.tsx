@@ -1,3 +1,4 @@
+import "./NavBar.scss";
 import { ISideBarProps } from "@/types/nav";
 import { NavBarLinks } from "@/utils/Links";
 import Image from "next/image";
@@ -11,7 +12,10 @@ const SideBar = ({ display, setDisplay }: ISideBarProps) => {
         onClick={() => setDisplay(false)}
       ></div>
 
-      <nav className={`SideBar ${display && "toggled"}`}>
+      <nav
+        className={`SideBar ${display && "toggled"}`}
+        onClick={() => setDisplay(false)}
+      >
         <div className="links">
           {NavBarLinks.map((navLink) => (
             <div key={navLink.title} className="navLink">

@@ -13,7 +13,9 @@
   }
 
   .SideBar {
-    display: block;
+    &.toggled {
+      display: block;
+    }
 
     .links,
     .getStarted {

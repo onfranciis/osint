@@ -6,14 +6,9 @@ import Link from "next/link";
 import { NavBarLinks } from "@/utils/Links";
 import SideBar from "./SideBar";
 import { useState } from "react";
+import { ISideBarProps } from "@/types/nav";
 
-const NavBar = () => {
-  const [display, setDisplay] = useState(false);
-
-  const handleSetDisplay = (value: boolean) => {
-    setDisplay(() => value);
-  };
-
+const NavBar = ({ display, setDisplay: handleSetDisplay }: ISideBarProps) => {
   return (
     <nav className="NavBar">
       <Link href="">
@@ -57,8 +52,6 @@ const NavBar = () => {
       <button className="burger" onClick={() => handleSetDisplay(true)}>
         <Image alt="Open menu" src="/menu.svg" width={27} height={27} />
       </button>
-
-      <SideBar display={display} setDisplay={handleSetDisplay} />
     </nav>
   );
 };
