@@ -1,13 +1,5 @@
 @import "../../styles/Theme.scss";
 
-@media screen and (max-width: 830px) {
-  .Three {
-    .bottom {
-      flex-wrap: wrap;
-    }
-  }
-}
-
 @media screen and (max-width: 900px) {
   .Two {
     grid-template-columns: 1fr 1.74px 1fr;
@@ -20,6 +12,14 @@
 
     .c {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .Three {
+    .bottom {
+      flex-wrap: wrap;
     }
   }
 }
@@ -44,5 +44,11 @@
       align-items: center;
       text-align: center;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .One {
+    padding: 129px 0 557px 25px;
   }
 }
